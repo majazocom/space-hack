@@ -8,8 +8,27 @@
 }
 
 body {
-    background-color: white;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h2 {
+    margin-block-start: 0;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
+
+h3 {
+    margin-block-end: 0;
+}
+
+p {
+    margin-block-start: 0.3rem;
 }
 
 .bg-darkest-purple {
@@ -118,6 +137,48 @@ body {
 }
 
 .footer-container {
-    /* margin-top: -20px;
-    margin-bottom: -20px; */
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-container__footer-item {
+    max-width: 9rem;
+}
+
+@media screen and (min-width: 600px) {
+    :root{
+        font-size: 22px;
+    }
+    
+    .header {
+        grid-template-areas:        
+            "header-wide header-wide planet astronaut"        
+            "header-wide header-wide gun ship";
+    }
+
+    .info-grid {
+        grid-template-areas: 
+            "station alien constellation constellation"
+            "text-box text-box constellation constellation";
+    }
+
+    .header__boxes--small, .info-grid__info-item--small, .info-grid__info-item--wide.bg-purple {
+        max-height: 360px;
+    }
+
+    .info-grid__info-item--wide.bg-darkest-purple {
+        max-height: 720px;
+    }
+
+    .hero {    
+        min-height: 800px;
+        background-position: bottom;
+    }
+
+    .footer-container {
+        padding: 7rem 4rem;
+    }
 }
