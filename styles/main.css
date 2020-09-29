@@ -51,13 +51,9 @@ p {
     background-color: var(--purple);
 }
 
-.bg-footer-purple {
-    background-color: var(--footer-bg-purple);
-}
+.bg-footer-purple { background-color: var(--footer-bg-purple); }
 
-.text-light {
-    color: white;
-}
+.text-light { color: white; }
 
 .header {
     display: grid;
@@ -99,6 +95,33 @@ p {
 }
 .header__boxes--small.bg-purple {
     grid-area: ship;
+}
+
+.gallery-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-imgs figure {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.gallery-imgs__image img{
+    width: 288px;
+    height: 288px;
+    object-fit: cover;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.gallery-imgs__image img:hover {
+    z-index: 300;
+    transform: scale(1.5);
 }
 
 .hero {
