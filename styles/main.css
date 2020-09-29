@@ -30,3 +30,41 @@ body {
 .bg-purple {
     background-color: var(--purple);
 }
+
+.bg-footer-purple {
+    background-color: var(--footer-bg-purple);
+}
+
+.text-light {
+    color: white;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: 
+        "header-wide header-wide"
+        "planet astronaut"
+        "gun ship";
+}
+
+.header__boxes--wide {
+    display: flex;
+    grid-area: header-wide;
+}
+
+.header__boxes--small {
+    display: flex;
+}
+
+.header__boxes--small.bg-dark-purple {
+    grid-area: planet;
+}
+.header__boxes--small.bg-light-purple {
+    grid-area: astronaut;
+}
+.header__boxes--small.bg-lightest-purple {
+    grid-area: gun;
+}
+.header__boxes--small.bg-purple {
+    grid-area: ship;
+}
