@@ -9,6 +9,7 @@
 
 body {
     background-color: white;
+    margin: 0;
 }
 
 .bg-darkest-purple {
@@ -71,6 +72,13 @@ body {
     grid-area: ship;
 }
 
+.hero {
+    background: linear-gradient(rgba(83, 55, 121, 0.57), rgba(83, 55, 121, 0.57)),
+                url('../assets/astronaut.jpg');
+    background-size: cover;
+    min-height: 210px;
+}
+
 .info-grid {
     display: grid;
     grid-template-areas: 
@@ -85,7 +93,7 @@ body {
 .info-grid__info-item--small.bg-dark-purple {
     grid-area: alien;
 }
-.info-grid__info-item--wide.bg-purple {
+.info-grid__info-item--wide.bg-purple { 
     grid-area: text-box;
 }
 .info-grid__info-item--wide.bg-darkest-purple {
