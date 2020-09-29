@@ -51,7 +51,7 @@ body {
     grid-area: header-wide;
 }
 
-.header__boxes--small, .header__boxes--wide {
+.header__boxes--small, .header__boxes--wide, .info-grid__info-item--small, .info-grid__info-item--wide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,3 +70,25 @@ body {
 .header__boxes--small.bg-purple {
     grid-area: ship;
 }
+
+.info-grid {
+    display: grid;
+    grid-template-areas: 
+        "station alien"
+        "text-box text-box"
+        "constellation constellation";
+}
+
+.info-grid__info-item--small.bg-light-purple {
+    grid-area: station;
+}
+.info-grid__info-item--small.bg-dark-purple {
+    grid-area: alien;
+}
+.info-grid__info-item--wide.bg-purple {
+    grid-area: text-box;
+}
+.info-grid__info-item--wide.bg-darkest-purple {
+    grid-area: constellation;
+}
+
