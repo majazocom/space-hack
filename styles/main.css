@@ -48,12 +48,14 @@ body {
 }
 
 .header__boxes--wide {
-    display: flex;
     grid-area: header-wide;
 }
 
-.header__boxes--small {
+.header__boxes--small, .header__boxes--wide {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .header__boxes--small.bg-dark-purple {
