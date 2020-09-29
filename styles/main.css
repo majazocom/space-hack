@@ -1,0 +1,32 @@
+:root {
+    --darkest-purple: #220B5E;
+    --dark-purple: #3B1D98;
+    --purple: #513779;
+    --light-purple: #7654B4;
+    --lightest-purple: #967ECB;
+    --footer-bg-purple: #654C8C;
+}
+
+body {
+    background-color: white;
+}
+
+.bg-darkest-purple {
+    background-color: var(--darkest-purple);
+}
+
+.bg-dark-purple {
+    background-color: var(--dark-purple);
+}
+
+.bg-light-purple {
+    background-color: var(--light-purple);
+}
+
+.bg-lightest-purple {
+    background-color: var(--lightest-purple);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
